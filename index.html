@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/responsive.css" type="text/css" rel="stylesheet">
+    <link href="css/lightbox.min.css" type="text/css" rel="stylesheet">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/Frame-1.ico">
+    <title>max-portofolio</title>
+</head>
+<!-- html -->
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- Logo -->
+        <h1><a href="#banner">MAX</a></h1>
+        <!-- menu-list -->
+        <nav>
+            <ul>
+                <!-- hyperlink -->
+                <li class="home active"><a href="#home">Beranda</a></li>
+                <!-- hyperlink -->
+                <li class="about"><a href="#about">Tentang Saya</a></li>
+                <!-- hyperlink -->
+                <li class="portfolio"><a href="#portfolio">Portofolio</a></li>
+                <!-- hyperlink -->
+                <li class="contact"><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <!-- menu hamburger -->
+        <div class="openMenu" id="open"><i class="fas fa-bars"></i></div>
+
+        <!-- mobile menu -->
+        <div id="myNav" class="overlay">
+            <div class="closebtn" id="close"><i class="fas fa-times"></i></div>
+            <ul class="overlay-content wrapper">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- section Baner-->
+        <section id="home" class ="banner">
+            <!-- foto diri -->
+                <img src="assets/max-profile.jpg" alt="foto-diri" title="foto-diri" class="banner-pic">
+            <!-- konten baner -->
+            <div class = "banner-content">
+                <h2>Junior Web Developer | Siswa SMK Strada Jakarta</h2>
+                <p>HTML | CSS | Javascript | Figma</p>
+                <div class="banner-social">
+                    <!-- github -->
+                    <div class="github">
+                        <a href="https://github.com/maxdesanta" target="_blank">
+                            <img src="assets/github 1.svg" alt="github" title="github" class="circle">
+                        </a>
+                    </div>
+                    <!-- instagram -->
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/max.desanta/" target="_blank">
+                            <img src="assets/instagram-color.svg" alt="instagram" title="instagram" class="circle">
+                        </a>
+                    </div>
+                    <!-- linkedin -->
+                    <div class="linkedin">
+                        <a href="assets/overlay/coming-soon.png" data-lightbox="mygallery">
+                            <img src="assets/linkedin-app.svg" alt="linkedin" title="linkedin" class="circle">
+                        </a>
+                    </div>
+                    <!-- whatsapp -->
+                    <div class="whatsapp">
+                        <a href="https://bit.ly/3f5JgFl" target="_blank">
+                            <img src="assets/wa-whatsapp.svg" alt="whatsapp" title="whatsapp" class="circle">
+                        </a>
+                    </div>
+                    <!-- facebook -->
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/vier.saputra.5" target="_blank">
+                            <img src="assets/Facebook_f_logo_(2019).svg" alt="facebook" title="facebook" class="circle">
+                        </a>
+                    </div>
+                    <!-- telegram -->
+                    <div class="telegram">
+                        <a href="https://t.me/Maxdesanta12" target="_blank">
+                            <img src="assets/telegram.svg" alt="telegram" title="telegram" class="circle">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Section Tentang Saya -->
+        <section class="tentang" id="about">
+            <h2 class="section-title">TENTANG SAYA</h2>
+            <div class="wrapper">
+                <div class="kiri">
+                    <img src="assets/max.jpg" alt="foto-diri" title="foto-diri">
+                </div>
+                <div class="kanan">
+                    <p>saya seorang siswa yang ingin menjadi developer yang handal memiliki kemampuan menulis program front-end (HTML - CSS - Javascript) dan mempunyai beberapa tujuan, yaitu :</p> <br>
+                    <ol>
+                        <li>
+                            langsung kerja kalau dapat dari sekolahnya
+                        </li>
+                        <li>
+                            jadi freelancer
+                        </li>
+                        <li>
+                            kerja di kapal jika masih belum punya pekerjaan 
+                        </li>
+                    </ol>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Section portofolio -->
+        <section class="portofolio" id="portfolio">
+            <h2 class="section-title">PORTOFOLIO</h2>
+            <div class="wrapper">
+                <div class="porto-card">
+                    <a href="assets/overlay/iphone.jpg" data-lightbox="avengers"> 
+                        <img src="assets/ben-kolde-xdLXPic3Wfk-unsplash.jpg" alt="iphone" title="iphone">
+                        <h4 class="porto-title">Iphone</h4>
+                    </a>     
+                </div>
+                <div class="porto-card">
+                    <a href="kalkulator.html">
+                        <img src="assets/charles-deluvio-GlavtG-umzE-unsplash.jpg" alt="kalkulator" title="kalkulator">
+                        <h4 class="porto-title">Kalkulator</h4>
+                    </a>
+                </div>
+                <div class="porto-card">
+                    <a href="assets/overlay/steak.jpg" data-lightbox="avengers"> 
+                        <img src="assets/edson-saldana-J88no2vCrTs-unsplash.jpg" alt="steak" title="steak">
+                        <h4 class="porto-title">Steak</h4>
+                    </a>
+                </div>
+                <div class="porto-card">
+                    <a href="assets/overlay/coca-cola.jpg" data-lightbox="avengers">
+                        <img src="assets/mae-mu-z8PEoNIlGlg-unsplash.jpg" alt="coca-cola" title="coca-cola">
+                        <h4 class="porto-title">Coca Cola</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- section nilai dan sertifikasi -->
+        <section class="nilai">
+            <h2 class="section-title">NILAI DAN SERTIFIKASI</h2>
+            <div class="wrapper">
+                <h3 class="nilai-title">NILAI</h3>
+                <table class="tabel-nilai">
+                    <tr>
+                        <th>Materi</th>
+                        <th>Pemdas</th>
+                        <th>Desain Grafis</th>
+                        <th>TKJ</th>
+                    </tr>
+                    <tr>
+                        <td>Teori</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Pratek</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="wrapper">
+            <h3 class="sertifikasi-title">Sertifikasi</h3>
+                <table class="tabel-sertifikasi">
+                    <tr>
+                        <th>Pemberi Sertifikat</th>
+                        <th>HTML</th>
+                         <th>CSS</th>
+                        <th>Javascript</th>
+                    </tr>
+                    <tr>
+                        <td>SoloLearn</td>
+                        <td><a href="assets/bb6b24dd5bd14b0c9a2deb537612abae-0001.jpg" data-lightbox="justiceleague">link</a></td>
+                        <td><a href= "assets/0002.jpg" data-lightbox="dark-avengers">link</a></td>
+                        <td><a href="assets/11574c89ebed45238825eeb149c86e39-0001.jpg" data-lightbox="sololearn">link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Progate</td>
+                        <td><a href="assets/0001.jpg" data-lightbox="thunderbolt">link</a></td>
+                        <td><a href="assets/0001.jpg" data-lightbox="suicidesquad">link</a></td>
+                        <td>
+                            <a href="assets/d82eedb8c8f770b76c5ab706e5378941course_certificate_3e86f8eeqss1cq.png" data-lightbox="progate">link</a>
+                            <a href="assets/sertifikatprogate.jpg" data-lightbox="progate"></a>
+                            <a href="assets/sertifikatkotakode.jpg" data-lightbox="progate"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- section kontak saya -->
+        <section class="kontak" id="contact">
+            <h2 class="section-title">KONTAK SAYA</h2>
+            <form class="kontak-box">
+                <div class="kontak-name wrapper">
+                    <i class="fas fa-pencil-alt"></i>
+                    <input type="text" name="nama pengontak" placeholder="Nama Anda">
+                </div>
+                <div class="kontak-email wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" name="email pengontak" placeholder="Email Anda">
+                </div>
+                <div class="kontak-pesan wrapper">
+                    <i class="fas fa-pencil-alt"></i>
+                    <textarea name="pesan pengontak" cols="30" rows="10" placeholder="Pesan Anda"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-kontak" onclick="kirimPesan()">
+                    <i class="fas fa-envelope"></i>Kirim
+                </button>
+            </form>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Copyright 2021 XAVIER | SMK STRADA JAKARTA XTIP</p>
+    </footer>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
