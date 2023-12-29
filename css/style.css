@@ -1,0 +1,163 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variable color */
+:root{
+    --primary-color: #1E1E1E;
+    --secondary-color: #FBE4D8;
+    --acent-color: #2B124C;
+    --bold1-color: #B693DA;
+    --bold2-color: #DFB6B2;
+    --font-style1: 'Antonio', sans-serif;
+    --font-style2: 'Pixelify Sans', sans-serif;
+}
+
+/* global */
+body {
+    font-family: var(--font-style1);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+    outline: none;
+    font-family: var(--font-style1);
+    caret-color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+/* .border {
+    border: 3px solid var(--acent-color);
+    padding: 20px;
+} */
+
+/* profile */
+.profile .container {
+    column-gap: 32px;
+    align-items: flex-start;
+}
+
+.profile-img img {
+    width: 250px;
+    height: 250px;
+}
+
+.profile-text.container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.profile-text .profile-title h1 {
+    font-family: var(--font-style2);
+    font-size: 8rem;
+    margin-top: -16px;
+}
+
+.profile-skill .skill-title {
+    margin-bottom: 5px;
+}
+
+/* desc */
+.desc {
+    padding-top: 25px;
+    padding-right: 100px;
+    line-height: 1.6;
+}
+
+/* command */
+
+/* command input */
+.command-input.container {
+    align-items: flex-end;
+    column-gap: 8px;
+    padding-top: 15px;
+}
+
+.command-input p {
+    color: var(--bold2-color);
+}
+
+.command-input p span {
+    color: var(--bold1-color);
+}
+
+.command-display {
+    padding: 15px 0;
+}
+
+.command-display p {
+    color: var(--bold2-color);
+}
+
+.command-display p .vistor-display {
+    color: var(--bold1-color);
+}
+
+.command-display p .vistor-display-2 {
+    color: var(--secondary-color);
+}
+
+
+/* command output */
+.command-output-help.container, .command-output-contacts.container, .command-output-certificates.container, .command-output-socials.container {
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.list-command.container, .list-output-contacts.container, .list-output-certificates.container, .list-output-socials.container {
+    column-gap: 8px;
+    
+}
+
+.list-command .list-title, .project-title, .contact-title, .certificates-title, .socials-title {
+    width: 90px;
+}
+
+/* about */
+.command-output-about.container {
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.command-output-about p:last-of-type {
+    padding-right: 830px;
+}
+
+
+/* project */
+.command-output-projects.container {
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.project-desc.container {
+    flex-direction: column;
+    padding: 0 10px;
+    width: 33%;
+    row-gap: 20px;
+}
+
+/* animation */
+@keyframes typing {
+    from {
+        width: 0
+    } to {
+        width: 100%
+    }
+}
