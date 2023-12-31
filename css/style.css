@@ -16,11 +16,26 @@
 }
 
 /* global */
+/* html, body, body > div:first-child, div.border, div.border > div {
+  height: 100%;
+  overflow: auto;
+} */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}  
+
 body {
     font-family: var(--font-style1);
     color: var(--secondary-color);
     background-color: var(--primary-color);
     padding: 20px;
+    height: 100%;
 }
 
 .container {
@@ -41,7 +56,8 @@ input {
     font-size: 1rem;
 }
 
-/* .border {
+/* 
+.border {
     border: 3px solid var(--acent-color);
     padding: 20px;
 } */
@@ -133,10 +149,7 @@ input {
 .command-output-about.container {
     flex-direction: column;
     row-gap: 8px;
-}
-
-.command-output-about p:last-of-type {
-    padding-right: 830px;
+    padding-right: 870px;
 }
 
 
@@ -152,12 +165,4 @@ input {
     width: 33%;
     row-gap: 20px;
 }
-
-/* animation */
-@keyframes typing {
-    from {
-        width: 0
-    } to {
-        width: 100%
-    }
-}
+  
