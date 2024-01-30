@@ -16,10 +16,10 @@
 }
 
 /* global */
-/* html, body, body > div:first-child, div.border, div.border > div {
+html, body, body > div:first-child, div.border, div.border > div {
   height: 100%;
   overflow: auto;
-} */
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -138,7 +138,6 @@ input {
 
 .list-command.container, .list-output-contacts.container, .list-output-certificates.container, .list-output-socials.container {
     column-gap: 8px;
-    
 }
 
 .list-command .list-title, .project-title, .contact-title, .certificates-title, .socials-title {

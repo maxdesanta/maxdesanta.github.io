@@ -80,32 +80,32 @@ function handleMenuCmd(menu) {
 
     switch (menu.toLowerCase()) {
         case '/about':
-            about.classList.add('command-output-about', 'container');
+            about.classList.add('command-output-about');
             about.innerHTML = aboutCommand;
             outputCmd.appendChild(about.cloneNode(true));
             break;
         case 'help':
-            help.classList.add('command-output-help', 'container');
+            help.classList.add('command-output-help');
             help.innerHTML = helpCommand;
             outputCmd.appendChild(help.cloneNode(true));
             break;
         case '/projects':
-            projects.classList.add('command-output-projects', 'container');
+            projects.classList.add('command-output-projects');
             projects.innerHTML = projectsCommand;
             outputCmd.appendChild(projects.cloneNode(true));
             break;
         case '/contacts':
-            contacts.classList.add('command-output-contacts', 'container');
+            contacts.classList.add('command-output-contacts');
             contacts.innerHTML = contactsCommand;
             outputCmd.appendChild(contacts.cloneNode(true));
             break;
         case '/certificates':
-            certificates.classList.add('command-output-certificates', 'container');
+            certificates.classList.add('command-output-certificates');
             certificates.innerHTML = certificatesCommand;
             outputCmd.appendChild(certificates.cloneNode(true));
             break;
         case '/socials':
-            socials.classList.add('command-output-socials', 'container');
+            socials.classList.add('command-output-socials');
             socials.innerHTML = socialsCommand;
             outputCmd.appendChild(socials.cloneNode(true));
             break;
@@ -180,7 +180,7 @@ function handleLinkSocials(link) {
 
 // handle output text
 function handleDisplayKeep(text) {
-    terminalDisplayGroup.innerHTML = `<p><span class="vistor-display">visitor</span>@max.desanta:$~ <span class="vistor-display-2">${text}</span></p>`;
+    terminalDisplayGroup.innerHTML = `<p class="py-4"><span class="text-[#B693DA]">visitor</span>@<span class="text-[#DFB6B2]">max.desanta</span>:$~ ${text}</p>`;
     terminalDisplayGroup.classList.add('command-display');
     outputCmd.appendChild(terminalDisplayGroup.cloneNode(true));
 }

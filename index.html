@@ -11,52 +11,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Max Portofolio</title>
     <!-- setup css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E1E1E',
+                        secondary: '#FBE4D8'
+                    },
+                    fontFamily: {
+                        antonio: ['Antonio'],
+                        pixelify: ['Pixelify Sans']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        html, body, body > div:first-child, div.border, div.border > div {
+            height: 100%;
+            overflow: auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+        }  
+    </style>
 </head>
-<body>
-    <div class="border">
-        <section class="profile">
-            <div class="container">
-                <div class="profile-img">
-                    <img src="assets/profile.jpg" alt="profile-img">
+<body class="bg-primary font-antonio p-5 h-full text-secondary">
+    <section class="profile flex items-start gap-x-8">
+        <div class="profile-img">
+            <img class="object-cover w-[250px] h-[250px]"" src="assets/profile.jpg" alt="profile-img">
+        </div>
+        <div class="profile-text flex flex-col justify-between h-[250px]">
+            <div class="profile-title -mt-4">
+                <h1 class="font-pixelify text-9xl">Max De Santa</h1>
+            </div>
+            <div class="profile-skill">
+                <div class="skill-title mb-1.5 text-2xl">
+                    <h1>Tech used :</h1>
                 </div>
-                <div class="profile-text container">
-                    <div class="profile-title">
-                        <h1>Max De Santa</h1>
-                    </div>
-                    <div class="profile-skill">
-                        <div class="skill-title">
-                            <h1>Tech used :</h1>
-                        </div>
-                        <div class="skill-icon">
-                            <i class='bx bxl-html5 bx-md'></i>
-                            <i class='bx bxl-css3 bx-md'></i>
-                            <i class='bx bxl-javascript bx-md'></i>
-                            <i class='bx bxl-nodejs bx-md'></i>
-                            <i class='bx bxl-react bx-md'></i>
-                            <i class='bx bxl-redux bx-md'></i>
-                            <i class='bx bxl-git bx-md'></i>
-                            <i class='bx bxl-wordpress bx-md'></i>
-                            <iconify-icon icon="devicon-plain:materialui" style="color: #fbe4d8;" width="38" height="34"></iconify-icon>
-                            <iconify-icon icon="cib:mysql" style="color: #fbe4d8;" width="38" height="34"></iconify-icon>
-                        </div>
-                    </div>
+                <div class="skill-icon">
+                    <i class='bx bxl-html5 bx-md'></i>
+                    <i class='bx bxl-css3 bx-md'></i>
+                    <i class='bx bxl-javascript bx-md'></i>
+                    <i class='bx bxl-nodejs bx-md'></i>
+                    <i class='bx bxl-react bx-md'></i>
+                    <i class='bx bxl-redux bx-md'></i>
+                    <i class='bx bxl-git bx-md'></i>
+                    <i class='bx bxl-wordpress bx-md'></i>
+                    <iconify-icon icon="devicon-plain:materialui" style="color: #fbe4d8;" width="38" height="34"></iconify-icon>
+                    <iconify-icon icon="cib:mysql" style="color: #fbe4d8;" width="38" height="34"></iconify-icon>
                 </div>
             </div>
-        </section>
-        <section class="desc">
-            <p>Welcome to my portfolio, where you can explore a showcase of my work and skills. If you're looking for guidance or information, please type "help" to access a list of commands. Additionally, but you can type "clear" to refresh the screen. I hope you enjoy to see my portofolio</p>
-        </section>
-        <section class="command">
-            <div class="command-output">
-            </div>
-            <div class="command-input container">
-                <p><span>visitor</span>@max.desanta:$~</p>
-                <input type="text" id="input-command" name="input-command" autofocus>
-            </div>
-        </section> 
-    </div>
+        </div>
+    </section>
+    <section class="desc">
+        <p class="pt-6 pr-28 leading-7">Welcome to my portfolio, where you can explore a showcase of my work and skills. If you're looking for guidance or information, please type "help" to access a list of commands. Additionally, but you can type "clear" to refresh the screen. I hope you enjoy to see my portofolio</p>
+    </section>
+    <section class="command">
+        <div class="command-output">
+        </div>
+        <div class="command-input flex items-end pt-4 gap-x-2">
+            <p><span class="text-[#B693DA]">visitor</span>@<span class="text-[#DFB6B2]">max.desanta</span>:$~</p>
+            <input type="text" id="input-command" name="input-command" class="border-none outline-none bg-transparent" autofocus>
+        </div>
+    </section> 
     <script src="js/main.js" type="module"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
