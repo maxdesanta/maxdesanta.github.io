@@ -29,6 +29,7 @@ inputCmd.addEventListener('keydown', (event) => {
                 break;
             case '/chathaulos':
             case '/opus':
+            case '/digitalclock':
                 handleLinkProject(inputCmd.value);
                 cmdHistory.push(inputCmd.value);
                 break;
@@ -124,6 +125,9 @@ function handleLinkProject(link) {
             break;
         case '/opus':
             linktoParameter('https://spiffy-donut-18bb24.netlify.app/');
+            break;
+        case '/digitalclock':
+            linktoParameter('https://quiet-biscochitos-0af5c4.netlify.app/');
             break;
         default:
             errorText.textContent = 'please type correctly, if you want to see list of commands please type "help"';

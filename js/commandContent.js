@@ -107,6 +107,27 @@ export const projectsCommand = `
             </div>
         </div>
     </div>
+    <div class="list-output-project container">
+    <div class="project-title">
+        <p>/digitalclock</p>
+    </div>
+    <div class="list-icon">
+        <p>=></p>
+    </div>
+    <div class="project-desc container">
+        <div class="project-desc-long">
+            <p>digital clock is exercise project to watch date, days,hours, minutes, and seconds to learn skill basic</p>
+        </div>
+        <div class="project-icon-list container">
+            <p>Built :</p>
+            <div class="project-icon">
+                <i class='bx bxl-html5 bx-sm'></i>
+                <i class='bx bxl-css3 bx-sm'></i>
+                <i class='bx bxl-javascript bx-sm'></i>
+            </div>
+        </div>
+    </div>
+</div>
 `;
 
 export const contactsCommand = `

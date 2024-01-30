@@ -145,6 +145,10 @@ input {
     width: 90px;
 }
 
+.project-icon-list.container {
+    column-gap: 10px;
+}
+
 /* about */
 .command-output-about.container {
     flex-direction: column;
