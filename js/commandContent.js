@@ -1,7 +1,7 @@
 export const aboutCommand = `
     <div class="flex flex-col gap-y-2">
         <p>Hi, I am Max</p>
-        <p class="pr-[860px]">I am junior web development pased in Tangerang, Indonesia. I have experienced making website with HTML, CSS, Javascript, and ReactJS. I also studying at Jakarta State Polytechnic. Besides as junior web development I also have another skills, like boxing, games, and invesment.</p>
+        <p class="lg:pr-[860px]">I am junior web development pased in Tangerang, Indonesia. I have experienced making website with HTML, CSS, Javascript, and ReactJS. I also studying at Jakarta State Polytechnic. Besides as junior web development I also have another skills, like boxing, games, and invesment.</p>
     </div>
 `;
 
@@ -74,8 +74,8 @@ export const projectsCommand = `
         <div class="list-icon">
             <p>=></p>
         </div>
-        <div class="flex flex-col gap-y-6">
-            <div class="pr-[800px]">
+        <div class="flex flex-col gap-y-4 lg:gap-y-6">
+            <div class="lg:pr-[800px]">
                 <p>opus is todo list website who have four categories. There are Importan Urgent, Important Not Urgent, Not Important Urgent, Not Important Not Urgent</p>
             </div>
             <div class="flex gap-x-2">
@@ -98,8 +98,8 @@ export const projectsCommand = `
         <div class="list-icon">
             <p>=></p>
         </div>
-        <div class="flex flex-col gap-y-6">
-            <div class="pr-[800px]">
+        <div class="flex flex-col gap-y-4 lg:gap-y-6">
+            <div class="lg:pr-[800px]">
                 <p>chathaulos is profile company web that makes 
                     clothes with combination of regular fabric 
                     and ulos fabric</p>
@@ -119,8 +119,8 @@ export const projectsCommand = `
         <div class="list-icon">
             <p>=></p>
         </div>
-        <div class="flex flex-col gap-y-6">
-            <div class="pr-[800px]">
+        <div class="flex flex-col gap-y-4 lg:gap-y-6">
+            <div class="lg:pr-[800px]">
                 <p>digital clock is exercise project to watch date, days,hours, minutes, and seconds to learn skill basic</p>
             </div>
             <div class="flex gap-x-4">

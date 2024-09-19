@@ -10,6 +10,21 @@ let outputCmd = document.querySelector('.command-output');
 let terminalDisplayGroup = document.createElement('div');
 let errorText = document.createElement('P');
 
+// fungsi autoscroll bawah
+function scrollAuto() {
+    // Tunggu sebentar untuk memastikan DOM telah diperbarui
+    setTimeout(() => {
+        // Scroll ke paling bawah
+        window.scrollTo(0, document.body.scrollHeight);
+        
+        // Fokus ke input command
+        inputCmd.focus();
+        
+        // Scroll lagi untuk memastikan input benar-benar terlihat
+        inputCmd.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }, 0);
+}
+
 // pembuatan blok ke bawah
 inputCmd.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
@@ -25,7 +40,6 @@ inputCmd.addEventListener('keydown', (event) => {
             case '/contacts':
                 handleMenuCmd(inputCmd.value);
                 cmdHistory.push(inputCmd.value);
-                window.scrollTo(0, document.body.offsetHeight);
                 break;
             case '/chathaulos':
             case '/opus':
@@ -54,23 +68,25 @@ inputCmd.addEventListener('keydown', (event) => {
         }
         inputCmd.value = '';
         count = cmdHistory.length;
+
+        scrollAuto()
     }
 
     if (event.key === "ArrowUp") {
         event.preventDefault();
         if (count > 0) {
-          count--;
+            count--;
         }
         inputCmd.value = cmdHistory[count];
     } else if (event.key === "ArrowDown") {
         event.preventDefault();
         if (count < cmdHistory.length - 1) {
-          count++;
-          inputCmd.value = cmdHistory[count];
+            count++;
+            inputCmd.value = cmdHistory[count];
         } else {
-          inputCmd.value = "";
+            inputCmd.value = "";
         }
-      }
+    }
 })
 
 
