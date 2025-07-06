@@ -140,7 +140,7 @@ function handleLinkProject(link) {
             linktoParameter('https://chathaulos.id/');
             break;
         case '/opus':
-            linktoParameter('https://spiffy-donut-18bb24.netlify.app/');
+            linktoParameter('https://github.com/maxdesanta/opus-project');
             break;
         case '/digitalclock':
             linktoParameter('https://quiet-biscochitos-0af5c4.netlify.app/');
