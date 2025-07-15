@@ -133,6 +133,26 @@ export const projectsCommand = `
             </div>
         </div>
     </div>
+    <div class="flex gap-x-4">
+        <div class="w-[100px]">
+            <p>/maxone</p>
+        </div>
+        <div class="list-icon">
+            <p>=></p>
+        </div>
+        <div class="flex flex-col gap-y-4 lg:gap-y-6">
+            <div class="lg:pr-[800px]">
+                <p>maxone is exercise project to see rate movies with TMDB API to learn skill NextJS</p>
+            </div>
+            <div class="flex gap-x-4">
+                <p>Built :</p>
+                <div class="project-icon">
+                    <iconify-icon icon="ri:nextjs-fill" width="24" height="24"  style="color: #FBE4D8"></iconify-icon>
+                    <iconify-icon icon="flowbite:tailwind-solid" width="24" height="24"  style="color: #FBE4D8"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 `;
 
